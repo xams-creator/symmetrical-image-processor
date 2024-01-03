@@ -1,0 +1,47 @@
+{
+    "name": "symmetrical-image-processor",
+    "version": "1.0.1",
+    "private": false,
+    "dependencies": {
+        "jimp": "^0.22.10",
+        "minimist": "^1.2.8"
+    },
+    "bin": "index.js",
+    "devDependencies": {
+        "@types/node": "^20.10.6",
+        "typescript": "^4.9.5",
+        "pkg": "^5.8.1",
+        "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+        "prettier": "^2.7.1"
+    },
+    "scripts": {
+        "start": "node index.js --path=public/images/img.png",
+        "build": "pkg index.js --target=node18-win-x64"
+    },
+    "prettier": {
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "printWidth": 120,
+        "useTabs": false,
+        "jsxSingleQuote": false,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "htmlWhitespaceSensitivity": "css",
+        "arrowParens": "avoid",
+        "endOfLine": "crlf",
+        "trailingComma": "es5",
+        "importOrderSeparation": true,
+        "importOrder": [
+            "^react(.*)$",
+            "<THIRD_PARTY_MODULES>",
+            "^@/(.*)$",
+            "^src/(.*)$",
+            "^[./]"
+        ],
+        "importOrderSortSpecifiers": true,
+        "plugins": [
+            "@trivago/prettier-plugin-sort-imports"
+        ]
+    }
+}
